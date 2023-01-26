@@ -3,7 +3,6 @@ function fetchBeverage(_id) {
     fetch(`http://127.0.0.1:5000/beverage/id/${_id}`)
         .then(response => response.json())
         .then(beverage => {
-            console.log(beverage)
             $("#_id").val(beverage._id);
             $("#name").val(beverage.name);
             $("#price").val(beverage.price);
@@ -43,11 +42,11 @@ beverageForm.submit(event => {
 
     event.preventDefault();
     event.currentTarget.reset();
-    window.location.href = '/app/beverage/beverage.html';
+    window.location.href = '/app/beverage/beverages.html';
 });
 
 /**
- * Gets the ingredient data with JQuery
+ * Gets the BEVERAGE data with JQuery
  */
 function getBeverageData() {
     return {
