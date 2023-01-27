@@ -10,6 +10,7 @@ fetch('http://127.0.0.1:5000/order/')
     .then(response => response.json())
     .then(orders => {
         let rows = orders.map(element => createOrderTemplate(element));
+        console.log(rows);
         let table = $("#orders tbody");
         table.append(rows);
     });
