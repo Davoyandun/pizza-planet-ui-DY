@@ -34,7 +34,6 @@ function formatOrder(order) {
     newOrder.date = order.date;
     newOrder.size = order.size;
     newOrder.total_price = order.total_price;
-  
     newOrder.ingredients = [];
     newOrder.beverages = [];
   
