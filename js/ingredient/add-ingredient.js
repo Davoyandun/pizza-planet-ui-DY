@@ -1,4 +1,5 @@
 function postIngredient(ingredient) {
+    console.log(ingredient);
 
     fetch('http://127.0.0.1:5000/ingredient/', {
         method: 'POST',
